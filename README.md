@@ -30,7 +30,6 @@
 			  
  #Server Stats
  ./P stats
-```sh	
-
 * * *
+
 #Telegram Channel: [SkyNET TeaM](https://t.me/SkyNettm)
