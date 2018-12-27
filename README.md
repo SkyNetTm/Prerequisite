@@ -16,9 +16,10 @@
 * * *
  #ubento server Prerequisite & Assistant
  
- Developer: [M_MehdiAnsari](https://github.com/M-MehdiAnsari)
+ **Developer: [M_MehdiAnsari](https://github.com/M-MehdiAnsari)
  
- Telegram: [PV](https://t.me/M_MehdiAnsari)
+ **Telegram: [Privet Chat](https://t.me/M_MehdiAnsari)
+ 
  #let to installation
 ```sh			  
  cd $HOME
