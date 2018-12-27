@@ -14,9 +14,9 @@
              ║ CopyRight © 2018 ║ Github:https://github.com/SkyNetTm ║ All Rights Reserved ║
              ╚══════════════════╩════════════════════════════════════╩═════════════════════╝
 * * *
-              #ubento server Prerequisite & Assistant
-	      Developer: [M_MehdiAnsari](T.Me/M_MehdiAnsari)
-* * *			  
+ #ubento server Prerequisite & Assistant
+ #Developer: [M_MehdiAnsari](T.Me/M_MehdiAnsari)
+			  
  #let to installation
 ```sh			  
  cd $HOME
