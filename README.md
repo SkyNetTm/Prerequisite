@@ -27,7 +27,7 @@
  cd $HOME
  git clone https://github.com/SkyNetTm/Prerequisite.git
  cd Prerequisite
- chmod +x P
+ chmod 777 P
  ./P install
 			  
  #Server Stats
