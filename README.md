@@ -22,7 +22,7 @@
  
  #Telegram Channel: [SkyNET TeaM](https://t.me/SkyNettm)
  
- #let to installation
+ #let's to installation
 ```sh			  
  cd $HOME
  git clone https://github.com/SkyNetTm/Prerequisite.git
