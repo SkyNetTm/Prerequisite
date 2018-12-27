@@ -20,6 +20,8 @@
  
  **Telegram: [Privet Chat](https://t.me/M_MehdiAnsari)
  
+ #Telegram Channel: [SkyNET TeaM](https://t.me/SkyNettm)
+ 
  #let to installation
 ```sh			  
  cd $HOME
@@ -30,6 +32,3 @@
 			  
  #Server Stats
  ./P stats
-* * *
-
-#Telegram Channel: [SkyNET TeaM](https://t.me/SkyNettm)
