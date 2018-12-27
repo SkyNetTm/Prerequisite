@@ -1,0 +1,117 @@
+#!/bin/bash
+###In The Name Of My Best Friend God
+###Development By M_MehdiAnsari
+
+install() {
+printf "Update Your Package Please Waite..."
+sleep 3
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install tmux
+sudo apt-get install luarocks
+sudo apt-get install screen
+sudo apt-get install
+sudo apt-get update
+sudo apt-get install upstart-sysv
+echo "Set Server Time..."
+sudo cp /usr/share/zoneinfo/Asia/Tehran /etc/localtime
+echo "Time Set Done!"
+echo " "
+echo " "
+echo "install lib Package..."
+sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev
+wget http://luarocks.org/releases/luarocks-2.2.2.tar.gz
+tar zxpf luarocks-2.2.2.tar.gz
+cd luarocks-2.2.2 && ./configure
+sudo make bootstrap
+echo "install lua package..."
+sleep 3
+sudo luarocks install luasocket
+sudo luarocks install redis-lua
+sudo luarocks install luasec
+sudo luarocks install lua-term
+sudo luarocks install serpent
+sudo luarocks install dkjson
+sudo luarocks install lanes
+sudo luarocks install Lua-cURL
+cd ..
+sudo apt-get install libconfig++9v5 libstdc++6
+sudo apt-get install libstdc++9
+sudo apt-get install lua-lgi
+sudo apt-get install libstdc++6
+sudo apt-get install libnotify-dev
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo apt-get install libconfig++8-dev
+sleep 5
+echo "Prerequisites Is Complated installed!"
+sleep 5 
+echo "Server ubunto Reboot For Apply Settings"
+exit
+}
+memTotal_b=`free -b |grep Mem |awk '{print $2}'`
+memFree_b=`free -b |grep Mem |awk '{print $4}'`
+memBuffer_b=`free -b |grep Mem |awk '{print $6}'`
+memCache_b=`free -b |grep Mem |awk '{print $7}'`
+memTotal_m=`free -m |grep Mem |awk '{print $2}'`
+memFree_m=`free -m |grep Mem |awk '{print $4}'`
+memBuffer_m=`free -m |grep Mem |awk '{print $6}'`
+memCache_m=`free -m |grep Mem |awk '{print $7}'`
+CPUPer=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
+hdd=`df -lh | awk '{if ($6 == "/") { print $5 }}' | head -1 | cut -d'%' -f1`
+uptime=`uptime`
+time=`date` 
+calendar=`cal` 
+ProcessCnt=`ps -A | wc -l`
+memUsed_b=$(($memTotal_b-$memFree_b))
+memUsed_m=$(($memTotal_m-$memFree_m))
+memUsedPrc=$((($memUsed_b*100)/$memTotal_b))
+
+function logo_play() {
+    declare -A txtlogo
+    seconds="0.010"
+    txtlogo[1]="  _____ _            _   _ ______ _______   _______ __  __"
+	txtlogo[2]=" / ____| |          | \ | |  ____|__   __| |__   __|  \/  |"
+	txtlogo[3]="| (___ | | ___   _  |  \| | |__     | |       | |  | \  / |"
+	txtlogo[4]=" \___ \| |/ / | | | | .   |  __|    | |       | |  | |\/| |"
+	txtlogo[5]=" ____) |   <| |_| | | |\  | |____   | |       | |  | |  | |"
+	txtlogo[6]="|_____/|_|\_\\__,  | |_| \_|______|  |_|       |_|  |_|  |_|"
+	txtlogo[7]="              __/ |                                        "
+	txtlogo[8]="             |____/                                         "
+	txtlogo[9]="     ••t.me/SkyNetTM •• Development By M_MehdiAnsari••"
+    printf "\033[38;5;600m\t"
+    for i in ${!txtlogo[@]}; do
+        for x in `seq 0 ${#txtlogo[$i]}`; do
+            printf "${txtlogo[$i]:$x:1}"
+            sleep $seconds
+        done
+        printf "\n\t"
+    done
+    printf "\n"
+	echo -e "\e[0m"
+}
+case $1 in
+install)
+logo_play
+install
+exit;;
+
+stats)
+logo_play
+echo "• Installed Memory(Ram): "$memTotal_m"MB"
+echo "• Usage Physical Memory: "$memUsed_m"MB" - $memUsedPrc"%"
+echo "• Cpu Usage History: "$CPUPer"%"
+echo "• Usage Memory(HHD): "$hdd"%"
+echo "• Process Now Runing: "$ProcessCnt""
+echo "• Server UpTime: "$uptime""
+echo "• Server data & info time:"$time""
+echo " "
+echo " "
+echo "                  ••Development By M_MehdiAnsari••"
+echo "                     ••Channel : t.me/SkyNetTM••"
+exit ;;
+
+esac
+exit 0
