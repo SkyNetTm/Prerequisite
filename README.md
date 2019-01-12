@@ -18,16 +18,22 @@
  
  **Developer: [M_MehdiAnsari](https://github.com/M-MehdiAnsari)
  
-@@ -28,7 +28,9 @@
+ **Telegram Channel: [SkyNetTM](https://t.me/Skynettm)
+
+ **API Messengr: [SKyNETBOT](https://t.me/skynettmbot)
+ 
+```sh
+$HOME
  git clone https://github.com/SkyNetTm/Prerequisite.git
  cd Prerequisite
  chmod 777 P
- ./P install
-			  
- #Server Stats
-#For install lua Prerequisite
+ 
+ #For install lua Prerequisite
  ./P lua
+ 
 #For install python Prerequisite			  
  ./P python
+ 
 #Server Stats
  ./P stats
+```
