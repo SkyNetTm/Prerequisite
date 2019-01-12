@@ -26,14 +26,14 @@
 $HOME
  git clone https://github.com/SkyNetTm/Prerequisite.git
  cd Prerequisite
- chmod 777 P
+ chmod 777 Sky
  
  #For install lua Prerequisite
- ./P lua
+ ./Sky lua
  
 #For install python Prerequisite			  
- ./P python
+ ./Sky python
  
 #Server Stats
- ./P stats
+ ./Sky stats
 ```
