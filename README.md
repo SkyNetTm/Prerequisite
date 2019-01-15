@@ -14,7 +14,7 @@
              ║ CopyRight © 2018 ║ Github:https://github.com/SkyNetTm ║ All Rights Reserved ║
              ╚══════════════════╩════════════════════════════════════╩═════════════════════╝
 * * *
-#ubento server Prerequisite & Assistant V1.2
+#Ubuntu server Prerequisite & Assistant V1.2
  
  **Developer: [M_MehdiAnsari](https://github.com/M-MehdiAnsari)
  
